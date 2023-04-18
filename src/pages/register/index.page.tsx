@@ -7,7 +7,6 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { api } from '@/lib/axios'
-import { ClaimUsernameForm } from '../Home/components/ClaimUsernameForm'
 import { AxiosError } from 'axios'
 
 const registerFormSchema = z.object({
