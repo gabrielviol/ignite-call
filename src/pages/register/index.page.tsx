@@ -31,27 +31,27 @@ export default function Register() {
     setValue,
     formState: { errors, isSubmitting },
   } = useForm<registerFormData>({
-    resolver: zodResolver(registerFormSchema)
+    resolver: zodResolver(registerFormSchema),
   })
 
   const router = useRouter()
 
   useEffect(() => {
-    if(router.query.username){
+    if (router.query.username) {
       setValue('username', String(router.query.username))
     }
   }, [router.query?.username, setValue])
 
   async function handleRegister(data: registerFormData) {
-    try{
+    try {
       await api.post('/users', {
         name: data.name,
         username: data.username,
       })
 
       await router.push('/register/connect-calender')
-    }catch (err){
-      if(err instanceof AxiosError && err?.response?.data?.message){
+    } catch (err) {
+      if (err instanceof AxiosError && err?.response?.data?.message) {
         alert(err.response.data.message)
         return
       }
