@@ -17,6 +17,7 @@ export const authOptions: NextAuthOptions = {
       }
     }),
   ],
+  
   callbacks: {
     async signIn({ account }){
       if(!account?.scope?.includes('https://www.googleapis.com/auth/calendar'))
