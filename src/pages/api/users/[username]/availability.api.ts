@@ -58,9 +58,16 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             user_id: user.id,
             date: {
                 gte: referenceDate.set('hour', startHour).toDate(),
+                lte: referenceDate.set('hour', endHour).toDate(),
             }
         }
     })
 
-    return res.json({ possibleTimes })
+    const availableTimes = possibleTimes.filter((time) => {
+        return !blockedTimes.some(
+            (blockedTime) => blockedTime.date.getHours() === time,
+        )
+    })
+
+    return res.json({ possibleTimes, availableTimes })
 }
