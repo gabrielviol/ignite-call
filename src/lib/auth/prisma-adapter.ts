@@ -22,7 +22,7 @@ export function PrismaAdapter(
         data: {
           name: user.name ?? '',
           email: user.email,
-          avatar_url: user.image,
+          avatar_url: user.avatar_url,
         },
       })
 
@@ -117,7 +117,7 @@ export function PrismaAdapter(
         data: {
           name: user.name ?? '',
           email: user.email,
-          avatar_url: user.image,
+          avatar_url: user.avatar_url,
         },
       })
 
