@@ -26,7 +26,6 @@ import { api } from '@/lib/axios'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 
-
 const timeIntervalsFormSchema = z.object({
   intervals: z
     .array(
@@ -74,7 +73,7 @@ export default function TimeIntervals() {
     handleSubmit,
     control,
     watch,
-    formState: { isSubmitting, errors }
+    formState: { isSubmitting, errors },
   } = useForm<TimeIntervalsFormInput>({
     resolver: zodResolver(timeIntervalsFormSchema),
     defaultValues: {
@@ -86,8 +85,8 @@ export default function TimeIntervals() {
         { weekDay: 4, enabled: true, startTime: '08:00', endTime: '18:00' },
         { weekDay: 5, enabled: true, startTime: '08:00', endTime: '18:00' },
         { weekDay: 6, enabled: false, startTime: '08:00', endTime: '18:00' },
-      ]
-    }
+      ],
+    },
   })
 
   const router = useRouter()
@@ -96,7 +95,7 @@ export default function TimeIntervals() {
 
   const { fields } = useFieldArray({
     control,
-    name: 'intervals'
+    name: 'intervals',
   })
 
   const intervals = watch('intervals')
@@ -114,16 +113,13 @@ export default function TimeIntervals() {
 
   return (
     <>
-      <NextSeo
-        title="Selecione sua disponibilidade | Ignite Call "
-        noindex
-      />
+      <NextSeo title="Selecione sua disponibilidade | Ignite Call " noindex />
       <Container>
         <Header>
           <Heading as="strong">Quase lá</Heading>
           <Text>
-            Defina o intervalo de horário que você está disponível em cada dia da
-            semana.
+            Defina o intervalo de horário que você está disponível em cada dia
+            da semana.
           </Text>
 
           <MultiStep size={4} currentStep={3} />
@@ -172,7 +168,7 @@ export default function TimeIntervals() {
             })}
           </IntervalContainer>
           {errors.intervals && (
-            <FormError size="sm" >{errors.intervals.message}</FormError>
+            <FormError size="sm">{errors.intervals.message}</FormError>
           )}
           <Button type="submit" disabled={isSubmitting}>
             Próximo passo
