@@ -66,13 +66,13 @@ Para rodar a aplicação será necessária a conexão com um banco de dados loca
 
 ```sh
   # Clone this project
-$ git clone git@github.com:diegoalmda/nextjs-ignite-call.git
+$ git clone https://github.com/gabrielviol/ignite-call.git
 # Install dependencies
 $ npm install
 # Run the project
 $ npm run dev
 # The server will initialize in the <http://localhost:3000>
 ```
-Testar o projeto em funcionamento -> [Ignite Call](https://nextjs-ignite-call.vercel.app/)
+Testar o projeto em funcionamento -> [Ignite Call](https://ignite-call-psi-ten.vercel.app/)
 
-Feito por Diego Almeida :wave: #TrilhaIgnite #Rocketseat 🚀
+Feito por Gabriel Oliveira :wave: #TrilhaIgnite #Rocketseat 🚀
