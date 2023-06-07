@@ -1,3 +1,8 @@
+
+<p align="center">
+ <img src="https://github.com/gabrielviol/ignite-call/blob/1f3137f658059e4f81e41a4beb270260551f53e0/images/Capa.png" alt="Capa Ignite Call" />
+</p>
+
 <h1 align="center">
   Ignite Call
 </h1>
@@ -17,15 +22,18 @@
 <br>
 
 <p align="center">
-  <img alt="dev.ignite-call" src=".github/home.png" width="100%">
+  <img alt="dev.ignite-call" src="https://github.com/gabrielviol/ignite-call/blob/1f3137f658059e4f81e41a4beb270260551f53e0/images/home.jpg" width="100%">
 </p>
 
 <p align="center">
-  <img alt="dev.ignite-call" src=".github/calendar.png" width="100%">
+  <img alt="dev.ignite-call" src="https://github.com/gabrielviol/ignite-call/blob/1f3137f658059e4f81e41a4beb270260551f53e0/images/cadastro.jpg" width="100%">
+</p>
+<p align="center">
+  <img alt="dev.ignite-call" src="https://github.com/gabrielviol/ignite-call/blob/1f3137f658059e4f81e41a4beb270260551f53e0/images/calendario.jpg" width="100%">
 </p>
 
 <p align="center">
-  <img alt="dev.ignite-call" src=".github/final.png" width="100%">
+  <img alt="dev.ignite-call" src="https://github.com/gabrielviol/ignite-call/blob/1f3137f658059e4f81e41a4beb270260551f53e0/images/agendar.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
